@@ -1,0 +1,33 @@
+BODY{font-size:14px;color:#222;margin:0 auto;FONT-FAMILY:宋体;background-color:#ECECEC;}
+#top_right{width:auto;height:28px;line-height:28px;background-color:#60B91F;color:#FFFFFF;margin-bottom:5px;font-size:12px;}
+#top_right a{color:#ffffff;padding-left:5px;}#top_a{float:left;padding-left:10px;}
+#top_right a:link,#top_right a:visited,#top_right a:active,#top_right a:hover{padding-left:5px;}
+#top_w{width:980px;margin:0 auto;height:60px;padding-top:5px;background-color:#FFFFFF;text-align:center;}
+#logo{float:left;width:150px;padding:5px 0 5px 30px;}
+#adminnow{float:right;padding-right:10px;}
+#zrang_top{margin:0 auto;width:1002px;height:auto;}
+#logoleft{float:left;padding-left:10px;width:570px;height:54px;}
+
+a:link{text-decoration:none;color:#000000;}a:active{text-decoration:none;color:#f8b12c;}a:hover{text-decoration:none;color:#ff0000;} 
+#bottom{height:30px;width:980px;text-align:center;line-height:25px;font-size:14px;clear:both;margin:0 auto;margin-top:5px;}
+#wrap{width:980px;height:590px;margin:7px auto;}
+
+/*main nav*/
+.tab_box{float:left;width:980px;height:40px;}
+.tab_boxleft{float:left;width:980px;}
+.tab_boxright{float:left;width:0px;}
+.lib_Menubox {height:40px;line-height:40px;margin:0px auto 0px auto;font-size:14px;}
+.lib_Menubox ul{margin:0px;padding:0px;list-style:none;margin-left:0px;text-align:center;}
+.lib_Menubox li{float:left;background:#fafafa;cursor:pointer;width:140px;color:#60b91f;letter-spacing:2px;padding-left:0px;margin-right:0px;border-bottom:1px solid #eee;}
+.lib_Menubox li:first-child{width:139px}
+.lib_Menubox li.hover{width:139px;color:#f8b12c;font-weight:bold;background:#fefefe;height:39px;line-height:38px;border-bottom:1px solid #f8b12c;}
+.lib_Menubox li:first-child.hover{width:138px}
+.lib_Contentbox{clear:both;width:980px;height:280px;text-align:center;padding-top:0px;overflow:hidden;}
+.q_link{width:139px;height:40px;line-height:40px;float:left;font-size:14px;display:inline;letter-spacing:1px}
+.q_t{border-left:1px #eee dotted;border-bottom:1px #eee dotted;}
+.q_t_l{width:138px;border-left:1px #eee solid}
+.q_t_r{border:1px #eee dotted;border-right:1px solid #eee;border-top:none;width:139px;}
+.q_b{border-left:1px #eee dotted;border-bottom:1px #eee dotted;}
+.q_s{border-left:1px #eee dotted;border-bottom:1px #eee solid;}
+.q_b_l{width:138px;border-left:1px #eee solid;}
+.q_b_r{border-right:1px #eee solid;width:139px;}
