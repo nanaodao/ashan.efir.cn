@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>eFir - 随机发现一个好站</title>
+		<meta name="keywords" content="上网导航,随机导航,网址导航,随机浏览,上网冲浪,任意门">
+		<meta name="description" content="路人甲,最有新意的随机导航网,发现你的兴趣,打发你的时间,好网站随时掌握">
+		<link rel="shortcut icon" href="/img/favicon.png">
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+		<script src="js/common.js"></script>
+	</head>
+	<body>
+		<div class="wraper">
+			<div class="side">
+				<div class="logo">
+					<h1>EFIR-易飞网</h1>
+				</div>
+				<ul id="list"></ul>
+				<div class="operation">
+					<a id="J_star" class="star" href="javascript:;"></a>
+				</div>
+				<div class="copy">&copy; <a href="http://www.efir.cn" target="_blank">www.eFir.cn</a></div>
+			</div>
+			<div class="content">
+				<div class="default"></div>
+				<div class="page">
+					<div class="msg">
+						<h1>加载中……</h1>
+						<p>如果等待时间过长，请刷新页面重试!</p>
+					</div>
+					<iframe id="iframes" class="view" src="" width="100%" height="100%" seamless security="restricted" sandbox="allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
+				</div>			
+			</div>
+		</div>
+		<script>
+			(function(){
+				var topic = {};
+				var type = getSearchObj()['topic'];
+				var $iframes = document.getElementById('iframes');
+				var $list = document.getElementById('list');
+				var items = [],item={};
+				var starlist = localStorage['starlist']?JSON.parse(localStorage['starlist']):[];
+				for(var i=0,len=_topics.length; i<len; i++){
+					if(_topics[i]['type'] == type){
+						topic = _topics[i];
+						items.push('<li class="active"><a href="?topic='+_topics[i]['type']+'">'+_topics[i]['name']+'</a></li>');
+					}else{
+						items.push('<li><a href="?topic='+_topics[i]['type']+'">'+_topics[i]['name']+'</a></li>');
+					}
+				}
+				//话题
+				var timestamp = +getCookie('timestamp');
+				var cur_timestamp = +new Date();
+			
+					switch(type){
+
+						default:
+							if(topic&&!topic['type']){
+								type = 'all';
+								topic = _topics[~~(Math.random()*_topics.length)];
+							}
+							loadScript('data/'+topic['type']+'.js',function(){
+								item = _data[~~(Math.random()*_data.length)];
+								$iframes.src = item['url'];
+							});
+					}
+					if('all,rss,star'.indexOf(type)>-0){
+						document.getElementById(type).className = 'active';
+					}
+			
+				addCookie('timestamp',cur_timestamp);
+				$list.innerHTML = items.join('');
+				$iframe.onload = $iframe.onreadystatechange = function(){
+					this.style.background = '#ffffff';
+				};
+
+			})();
+		</script>
+		<div style="display: none;">
+
+		</div>
+	</body>
+</html>
