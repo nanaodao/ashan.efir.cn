@@ -1,6 +1,6 @@
 var _data = [
 	{
-		'name':'网易云音乐',
-		'url':'http://music.163.com/'		
+		'name':'音悦Tai',
+		'url':'https://www.yinyuetai.com/'		
 	}
 ];
