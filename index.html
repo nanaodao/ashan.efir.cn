@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>eFir - 随机发现一个好站</title>
+		<title>eFir - 网址导航</title>
 		<meta name="keywords" content=网址导航">
 		<meta name="description" content="网址导航,免费网址导航。中国网址导航、各省网址导航，贴心网址导航。">
 		<link rel="shortcut icon" href="/img/favicon.png">
@@ -13,7 +13,7 @@
 		<div class="wraper">
 			<div class="side">
 				<div class="logo">
-					<h1>EFIR-易飞网</h1>
+					<h1>EFIR-网址导航</h1>
 				</div>
 				<ul id="list"></ul>
 				<div class="operation">
@@ -28,7 +28,7 @@
 						<h1>加载中……</h1>
 						<p>如果等待时间过长，请刷新页面重试!</p>
 					</div>
-					<iframe id="iframes" class="view" src="" width="100%" height="100%" seamless security="restricted" sandbox="allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
+					<iframe id="iframe" class="view" src="" width="100%" height="100%" seamless security="restricted" sandbox="allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
 				</div>			
 			</div>
 		</div>
@@ -36,7 +36,7 @@
 			(function(){
 				var topic = {};
 				var type = getSearchObj()['topic'];
-				var $iframes = document.getElementById('iframes');
+				var $iframe = document.getElementById('iframe');
 				var $list = document.getElementById('list');
 				var items = [],item={};
 				var starlist = localStorage['starlist']?JSON.parse(localStorage['starlist']):[];
@@ -51,31 +51,27 @@
 				//话题
 				var timestamp = +getCookie('timestamp');
 				var cur_timestamp = +new Date();
-			
+				if(cur_timestamp){
 					switch(type){
 
 						default:
 							if(topic&&!topic['type']){
-		
-								topic = _topics[~~(Math.random()*_topics.length)];
+
+								$iframe.src = 'http://efir.cn/jiexi/';
 							}
 							loadScript('data/'+topic['type']+'.js',function(){
 								item = _data[~~(Math.random()*_data.length)];
-								$iframes.src = item['url'];
+								$iframe.src = item['url'];
 							});
 					}
-					if('all,rss,star'.indexOf(type)>-0){
-						document.getElementById(type).className = 'active';
-					}
-			
-				addCookie('timestamp',cur_timestamp);
+
+				}
+
 				$list.innerHTML = items.join('');
-				$iframe.onload = $iframe.onreadystatechange = function(){
-					this.style.background = '#ffffff';
-				};
+
 
 			})();
-		</script>
+		</script>	
 		<div style="display: none;">
 
 		</div>
