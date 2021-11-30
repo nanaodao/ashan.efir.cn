@@ -1,6 +1,6 @@
 var _data = [
 	{
-		'name':'音悦Tai',
-		'url':'https://www.yinyuetai.com/'		
+		'name':'转让网',
+		'url':'http://www.zrang.com/'		
 	}
 ];
