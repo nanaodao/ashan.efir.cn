@@ -1,6 +1,26 @@
 var _data = [
 	{
-		'name':'转让网',
-		'url':'http://www.zrang.com/'		
+		'name':'YOKA',
+		'url':'http://www.yoka.com/'		
+	},
+	{
+		'name':'时尚网',
+		'url':'http://www.trends.com.cn/'
+	},
+	{
+		'name':'轻奢网',
+		'url':'http://www.ileehoo.com/'
+	},
+	{
+		'name':'精品网',
+		'url':'http://www.sg.com.cn/'
+	},
+	{
+		'name':'时尚伊人',
+		'url':'http://www.cosmopolitan.com.cn/'
+	},
+	{
+		'name':'风尚中国',
+		'url':'http://www.fengsung.com/'
 	}
 ];
