@@ -1,6 +1,10 @@
 var _data = [
 	{
-		'name':'转让网',
-		'url':'http://www.zrang.com/'		
+		'name':'音乐',
+		'url':'https://music.xf1433.com/'
+	},
+	{
+		'name':'豆瓣音乐',
+		'url':'https://music.douban.com/artists/player/'		
 	}
 ];
