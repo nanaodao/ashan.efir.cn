@@ -8,12 +8,28 @@ var _topics = [
 		'type':'video'
 	},
 	{
+		'name':'视频',
+		'type':'shipin'
+	},
+	{
+		'name':'直播',
+		'type':'zhibo'
+	},
+	{
+		'name':'电台',
+		'type':'diantai'
+	},
+	{
 		'name':'音乐',
 		'type':'music'
 	},
 	{
 		'name':'美文',
 		'type':'meiwen'
+	},
+	{
+		'name':'小说',
+		'type':'xiaoshuo'
 	},
 	{
 		'name':'时尚',
@@ -26,6 +42,10 @@ var _topics = [
 	{
 		'name':'信息',
 		'type':'fenlei'
+	},
+	{
+		'name':'查询',
+		'type':'chaxun'
 	}
 ];
 
