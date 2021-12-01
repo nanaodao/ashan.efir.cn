@@ -8,10 +8,6 @@ var _data = [
 		'url':'http://www.trends.com.cn/'
 	},
 	{
-		'name':'轻奢网',
-		'url':'http://www.ileehoo.com/'
-	},
-	{
 		'name':'精品网',
 		'url':'http://www.sg.com.cn/'
 	},
