@@ -18,9 +18,5 @@ var _data = [
     {
         'name':'美食吧',
         'url':'http://www.sbar.com.cn/'     
-    },
-    {
-        'name':'菜肴之家',
-        'url':'http://www.haozuo123.com/'     
     }
 ];
