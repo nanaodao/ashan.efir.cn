@@ -4,10 +4,6 @@ var _data = [
 		'url':'http://www.yoka.com/'		
 	},
 	{
-		'name':'时尚网',
-		'url':'http://www.trends.com.cn/'
-	},
-	{
 		'name':'精品网',
 		'url':'http://www.sg.com.cn/'
 	},
