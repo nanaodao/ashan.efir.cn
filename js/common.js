@@ -1,30 +1,30 @@
 var _topics = [
 	{
-		'name':'瑙ｆ瀽',
+		'name':'解析',
 		'type':'vip'
 	},
 	{
-		'name':'褰辫',
+		'name':'影视',
 		'type':'video'
 	},
 	{
-		'name':'闊充箰',
+		'name':'音乐',
 		'type':'music'
 	},
 	{
-		'name':'鏃呮父',
-		'type':'travel'
+		'name':'美文',
+		'type':'meiwen'
 	},
 	{
-		'name':'鏃跺皻',
+		'name':'时尚',
 		'type':'fashion'
 	},
     {
-        'name':'缇庨',
+        'name':'美食',
         'type':'food'
     },
 	{
-		'name':'淇℃伅',
+		'name':'信息',
 		'type':'fenlei'
 	}
 ];
@@ -59,7 +59,7 @@ function loadScript(url, callback) {
 
 function addCookie(objName,objValue,objHours,objDomain,objPath){
     var str = objName + "=" + escape(objValue);
-    if(objHours > 0){ //涓烘椂涓嶈瀹氳繃鏈熸椂闂达紝娴忚鍣ㄥ叧闂椂cookie鑷姩娑堝け
+    if(objHours > 0){ //为时不设定过期时间，浏览器关闭时cookie自动消失
         var date = new Date();
         var ms = objHours*3600*1000;
         date.setTime(date.getTime() + ms);
