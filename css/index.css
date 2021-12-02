@@ -122,3 +122,7 @@ padding-bottom: 20px;
 	margin-bottom: 20px;
 	font-size: 36px;
 }
+
+@media only screen and (max-width: 767px) {
+.side{float:left;position:relative;width:58px;height:100%;}
+}
