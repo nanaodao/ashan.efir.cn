@@ -12,10 +12,6 @@ var _data = [
 		'url':'https://music.qier222.com/'
 	},
 	{
-		'name':'有意思8',
-		'url':'https://www.youyisi8.com/category/music'
-	},
-	{
 		'name':'爱绿豆',
 		'url':'https://www.iludou.com/music/'		
 	}
