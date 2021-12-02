@@ -45,7 +45,7 @@ a{
 	content:'';
 	width:33%;
 	height:1px;
-	background:rgb(189, 183, 107);
+	background: rgb(92, 184, 92);
 }
 .side .logo h1{
 	line-height:22px;
@@ -84,7 +84,7 @@ padding-bottom: 20px;
 	width: 24px;
 	height: 24px;
 	margin:0 auto;
-	background: url('/img/icon-heart.png') 100% center no-repeat;
+	background: url('../img/icon-heart.png') 100% center no-repeat;
 }
 .side .star-active{
 	background-position: 0 center;
@@ -125,4 +125,7 @@ padding-bottom: 20px;
 
 @media only screen and (max-width: 767px) {
 .side{float:left;position:relative;width:58px;height:100%;}
+.side .logo:after{width:100%;}
+.side .logo h1{margin-top: -15px;margin-left: 5px;}
 }
+
