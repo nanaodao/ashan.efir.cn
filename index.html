@@ -25,7 +25,7 @@ var _opts = { //配置项
 ajax_tab:'.arc_menu',
 ajax_content:'content',
 ajax_num:9,
-ajax_title:'eFir随机网址导航',
+ajax_title:'eFir网站推荐',
 default_url:'shouye',
 default_id:0
 };
@@ -38,12 +38,12 @@ arc_ajxatab.init();
 <div class="wraper">
 <div class="side">
 <div class="logo">
-<h1>eFir 随机推荐</h1>
+<h1>eFir 网站推荐</h1>
 </div>
 <header class="header">
 <ul class="arc_menu" id="list">
 <li class="active"><a href="javascript:;" data-url="shouye">发现</a></li>
-<li><a href="javascript:;" data-url="vip">解析</a></li>
+<li><a href="javascript:;" data-url="vip">播放</a></li>
 <li><a href="javascript:;" data-url="dy">影视</a></li>
 <li><a href="javascript:;" data-url="music">音乐</a></li>
 <li><a href="javascript:;" data-url="meiwen">美文</a></li>
@@ -53,13 +53,14 @@ arc_ajxatab.init();
 <li><a href="javascript:;" data-url="fenlei">分类</a></li>
 </ul>
 </header>
-<div class="operation"><a id="J_star" class="star" href="javascript:;" data-url="shouye"></a></div>
+<div class="operation"><a class="star" onClick="myFunction()"></a></div>
 <div class="copy">&copy; <a href="http://www.efir.cn" target="_blank">eFir.cn</a></div>
 </div>	
 <div class="content">
 <section class="page content"></section>
 </div>
 </div>
+<script>function myFunction() {alert("发现栏目网址来自全网，非本站收录，其他栏目为本站收录网址。优秀网址请提交邮箱：84823429@qq.com");}</script>
 <div style="display: none;"><script type="text/javascript" src="https://js.users.51.la/3880811.js"></script></div>
 </body>
 </html>
